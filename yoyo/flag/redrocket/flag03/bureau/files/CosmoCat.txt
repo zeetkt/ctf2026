@@ -1,0 +1,46 @@
+/// Fichier recupere sur le compte de l'admin d'Astrobooking.coin ///
+
+Grace a une faille de securite du site j'ai pu infiltrer le reseau, et recuperer des infos
+
+
+###
+Titre: CosmoCat.txt - L'Art de Regrouper des Fichiers pour Capturer une Cle Privee SSH
+###
+
+
+Dans l'univers infini de la ligne de commande Linux, un outil brille comme une etoile dans le firmament numerique.
+La commande `cat`. Aussi simple que puissante, elle detient le pouvoir de fusionner des fragments disperses dans l'espace binaire
+Les assemblant en une constellation coherente de donnees.
+
+Aujourd'hui, nous allons explorer les confins de cette galaxie numerique pour accomplir une mission particuliere.
+Recuperer une cle privee SSH. Arme de trois fichiers textes, tels des astres orbitant autour d'un soleil cryptographique
+Nous utiliserons `cat` pour les fusionner et extraire le tresor tant convoite.
+
+Notre premiere etape consiste a reunir nos fichiers en un seul.
+Avec `cat`, nous pouvons accomplir cette tache avec une simplicite desarmante :
+
+###
+cat fichier1.txt fichier2.txt fichier3.txt > CosmoCat_combined.txt
+###
+
+Tel un magicien cosmique, `cat` rassemble les fragments de nos fichiers en un tout harmonieux
+Les fondant ensemble dans un nouvel univers de donnees.
+
+Maintenant que nos fichiers sont fusionnes, il est temps de sonder les profondeurs de ce nouvel artefact.
+Avec un simple coup d'oeil, nous pourrions manquer la cle privee, noyee dans un ocean de texte.
+Mais `cat` possede un regard percant qui peut extraire le precieux sesame :
+
+###
+cat CosmoCat_combined.txt | grep "PRIVATE KEY"
+###
+
+Comme un explorateur stellaire naviguant a travers les etoiles, `cat` filtre les lignes de notre fichier combine
+Ne laissant que celles contenant la precieuse sequence "PRIVATE KEY".
+Ainsi, la cle se revele, etincelant dans l'obscurite comme un joyau dans la nuit.
+
+Avec la commande `cat`, nous avons accompli notre quete cosmique.
+Tel un astrophotographe capturant la lumiere des etoiles lointaines
+Nous avons rassemble les fragments de donnees dispersees pour reveler le secret cache au cœur de l'espace numerique.
+
+CosmoCat.txt - une symphonie de fichiers fusionnes, une danse de donnees
+Une exploration interstellaire a travers les mysteres de la ligne de commande Linux.

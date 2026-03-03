@@ -1,0 +1,23 @@
+main {
+    padding: 0 20vw;
+    display: flex;
+    flex-direction: column;
+    min-height: 60vh;
+}
+
+form,
+img,
+section {
+    align-self: center;
+    width: 500px;
+}
+
+form input[type="text"] {
+    margin-right: var(--size-h3);
+    padding: 0.5rem;
+}
+
+section {
+    display: flex;
+    justify-content: space-between;
+}

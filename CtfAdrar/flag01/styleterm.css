@@ -1,0 +1,75 @@
+body {
+    background-color: black;
+}
+
+#terminal {
+    text-align: left;
+    position: absolute;
+    left: 20%;
+    right: 20%;
+    top: 6%;
+    color: turquoise;
+    background-color: rgba(0, 0, 0, 0.6);
+    font-size: 20px;
+    padding-bottom: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#timer {
+    text-align: center;
+    position: absolute;
+    left: 20%;
+    right: 20%;
+    bottom: 30%;
+    color: turquoise;
+    background-color: rgba(0, 0, 0);
+    font-size: 20px;
+    padding-bottom: 100px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.centered-button {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: rgba(66, 216, 201);
+    font-size: 20px;
+    margin-left: 4px;
+    margin-right: 4px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border: 2px solid turquoise;
+}
+
+.centered-button:hover {
+    background-color: turquoise;
+    color: black;
+}
+
+footer {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes moveStar {
+    from { right: 0; }
+    to { left: 100%; }
+}
+
+.star {
+    position: absolute;
+    bottom: 30%;
+    background-color: black;
+    color: turquoise;
+    z-index: 9999;
+}
+
+#codeInputWrapper {
+    display: flex;
+    align-items: center;
+}
+

@@ -1,0 +1,17 @@
+main {
+    padding: 0 20vw;
+    min-height: 65vh;
+}
+
+div {
+    margin-bottom: var(--size-h1);
+}
+
+input {
+    margin-right: var(--size-regular);
+}
+
+#lancer{
+    border-radius: var(--size-h2);
+    padding:0.5rem;
+}

@@ -1,0 +1,4 @@
+zone "adrar.lan" {
+    type master;
+    file "/etc/bind/db.adrar.lan";
+};

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connexion</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="src/style/base.css">
+    <link rel="stylesheet" href="src/style/style.css">
+    <link rel="stylesheet" href="src/style/register.css">
+    <script src="https://kit.fontawesome.com/707f08755a.js" crossorigin="anonymous"></script>
+    <!-- <script src="src/script/script.js" defer></script> -->
+    <script src="src/script/register.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <img src="src/img/logo_ardrar.png" alt="Logo de l'ADRAR Pôle Numérique">
+        <nav>
+            <ul>
+
+            </ul>
+        </nav>
+        <div></div>
+    </header>
+    <main>
+        <section>
+            <form class="register">
+                <h1>Connexion</h1><span><i class="fa-solid fa-circle-info" id="bouton--info"></i></span>
+                <label for="" class="register--label">Saisir le nom de l'équipe: </label>
+                <input type="text" id="nom" class="register--input" required>
+                <label for="" class="register--label">Saisir le login adminstrateur: </label>
+                <input type="text" id="login" class="register--input" required>
+                <label for="" class="register--label">Saisir le mot de passe adminstrateur: </label>
+                <input type="text" id="mdp" class="register--input" required>
+                <button class="button--valider" id="bt_register">Connexion</button>
+            </form>
+        </section>
+        <h2 class="flag--hidden">Login administrateur : admin</h2>
+        <img id="secret" src="./src/img/connexion.png" title="Mot de passe :
+        Admin@Meet2024">
+    </main>
+    <section>
+        <div class="modal" id="modal">
+            <div class="modal--content">
+                <span id="bt-close">X</span>
+                <h2>Message</h2>
+                <h3 id="message--modal">
+                </h3>
+                <div class="modal--button">
+                    <button class="button--valider" id="bt_confirm">Confirmer</button>
+                    <button class="button--annuler" id="bt_cancel">Annuler</button>
+                </div>
+            </div>
+        </div>
+        <!-- modal info -->
+        <div class="modal--info" id="modal--info">
+            <div class="modal--info--content">
+                <h2>Informations </h2>
+                <div id="message--info">
+                    Pour vous connecter à la plateforme du CTONTAF:<br> Vous avez besoin de : <br><br> - choisir un <strong>nom d'équipe</strong>,<br> - saisir Le login et le mot de passe de l'administrateur.<br><br> Il perd un peu la mémoire... et pour ne pas oublier les identifiants il les a caché en lieu "sûr" !!!
+                    Retrouvez les.
+                </div>
+                <div class="modal--info--button">
+                    <button class=".button--annuler" id="btInfoClose">Fermer</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+    </footer>
+</body>
+
+</html>

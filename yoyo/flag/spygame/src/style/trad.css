@@ -1,0 +1,24 @@
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+section{
+    display: flex;
+    align-self: center;
+    width:min-content;
+}
+
+textarea, p{
+    height: 150px;
+    width: 450px;
+    border: 1px solid black;
+    margin: 0;
+    padding: 5px;
+}
+
+button {
+    margin : 0 20px;
+    height: 40px;
+    align-self: center;
+}

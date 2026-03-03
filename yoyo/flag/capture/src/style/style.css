@@ -1,0 +1,23 @@
+main {
+    padding: 0 20vw;
+    min-height: 65vh;
+    a {
+        color: var(--secondary-color);
+        font-size: var(--size-h3);
+        font-style: italic;
+        font-weight: 600;
+        text-decoration: underline var(--secondary-color);
+    }
+}
+
+div {
+    margin-bottom: var(--size-h1);
+}
+
+input {
+    margin-right: var(--size-regular);
+}
+
+.buttonIndice {
+    margin-right: var(--size-h1);
+}

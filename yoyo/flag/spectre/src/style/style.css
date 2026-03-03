@@ -1,0 +1,12 @@
+main {
+    padding: 0 20vw;
+    min-height: 65vh;
+}
+
+input {
+    margin-right: var(--size-regular);
+}
+
+section button {
+    margin-right: var(--size-h1);
+}

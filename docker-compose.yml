@@ -1,0 +1,55 @@
+version: "3.5"
+
+services:
+  challenge_tar:
+    build:
+      context: ./CTF1/
+      dockerfile: Dockerfile  # Si tu renommes le fichier, sinon juste Dockerfile
+    container_name: ctf_ssh_tar
+    restart: unless-stopped
+    ports:
+      - "5000:22" # On accède au challenge via le port 5000
+    networks:
+      ctf_net:
+        ipv4_address: 172.20.0.20
+
+  apachephp:
+    build: .
+    container_name: ctf_web
+    restart: unless-stopped
+    ports:
+      - "80:80"
+      - "443:443"
+      - "4242:4242" # Le port du challenge de Flo
+    volumes:
+      # On garde les logs accessibles depuis l'extérieur pour debugger
+      - ./logs_apache:/var/log/apache2
+    networks:
+      ctf_net:
+        ipv4_address: 172.20.0.10
+
+  bind9:
+    image: ubuntu/bind9
+    container_name: srvdns
+    restart: unless-stopped
+    environment:
+      - BIND9_USER=root
+      - TZ=Europe/Paris
+    ports:
+      - "53:53/tcp"
+      - "53:53/udp"
+    volumes:
+      - ./configdns:/etc/bind
+      - ./cachedns:/var/cache/bind
+      - ./recordsdns:/var/lib/bind
+    networks:
+      ctf_net:
+        ipv4_address: 172.20.0.2
+
+# On crée un réseau fixe pour que le DNS et le Web se parlent facilement
+networks:
+  ctf_net:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.20.0.0/16

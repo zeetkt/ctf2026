@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spy Game</title>
+    <link rel="stylesheet" href="../../src/style/base.css">
+    <link rel="stylesheet" href="src/style/style.css">
+    <script src="./src/script/redirection.js"></script>
+    <script src="../../src/script/functionAPI.js" defer></script>
+    <script src="https://kit.fontawesome.com/707f08755a.js" crossorigin="anonymous"></script>
+    <script src="src/script/script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <img src="../../src/img/logo_ardrar.png" alt="Logo de l'ADRAR Pôle Numérique">
+        <nav>
+            <ul>
+                <li><a href="../../accueil.html">Accueil</a></li>
+                <li><a href="../../contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div></div>
+    </header>
+    <main>
+        <h1>Spy Game</h1>
+        <h2>Ce Flag est caché dans un coffre. 
+            <br>Aider SAMUEL votre coéquipier virtuel à en trouver la combinaison.
+            <br>Vous pouvez contacter MIRA MURATI son amie IAnalyste pour obtenir de l'aide, mais chacune de ses interventions vous coutera des points (50 points par indice donnée par MIRA). 
+            <br>Réussirez-vous à déchiffrer la combinaison du coffre pour l'ouvrir… avec un minimum d'indice ?
+            </h2>
+        <section class="enonce">
+            <h2>MIRA MURATI</h2>
+            <img class="enonce__analyst" src="./src/img/avatar_analyste.png" alt="L'Analyste">
+            <div>
+                <p class="enonce__phrase">Contacter l'Analyste pour obtenir de l'aide <button class="enonce__appel button--retour">Appeler !</button></p>
+
+                <p class="enonce__indice"></p>
+            </div>
+        </section>
+        <section class="coequipier">
+            <h2>SAMUEL</h2>
+            <img class="coequipier__portrait" src="./src/img/avatar_coequipier.png" alt="Le Coéquipier">
+            <p class="coequipier__message">
+
+            </p>
+            <audio class="coequipier__morse" controls src="./src/audio/morse.wav"></audio>
+            <p class="coequipier__transcription">
+
+            </p>
+            <article class="coequiper__container reduce">
+
+            </article>
+        </section>
+        <section class="interface">
+            <section class="joueur">
+                <h2>VOTRE REPONSE</h2>
+                <textarea name="" id="interface" cols="30" rows="10"></textarea>
+                <button class="joueur__button phase0 button--valider">Envoyer</button>
+                <p class="joueur__message"></p>
+            </section>
+            <section class="coffre">
+                <h2>LE COFFRE</h2>
+                <img class="coffre__img" src="./src/img/vault.png" alt="Le Coffre">
+                <input type="text" class="coffre__combinaison">
+                <button class="coffre__button button--valider">Valider la Combinaison</button>
+                <p class="coffre__answer"></p>
+                <p class="coffre__indice"></p>
+            </section>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>

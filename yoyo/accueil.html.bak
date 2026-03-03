@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="src/style/base.css">
+    <link rel="stylesheet" href="src/style/style.css">
+    <script src="https://kit.fontawesome.com/707f08755a.js" crossorigin="anonymous"></script>
+    <script src="src/script/redirection.js"></script>
+    <script src="src/script/functionAPI.js" defer></script>
+    <script src="src/script/script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <img src="src/img/logo_ardrar.png" alt="Logo de l'ADRAR Pôle Numérique">
+        <nav>
+            <ul>
+                <li><a href="accueil.html">Accueil</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div></div>
+    </header>
+
+    <main>
+        <section>
+            <h1>Listes des Flags !</h1>
+
+            <section class="listFLag">
+                <!--FORMULAIRE JEFF-->
+                <article class="flag" data-aos="fade-up" data-aos-delay="0" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-once="true">
+                    <img class="flag__star displayNone" src="./src/img/etoile.png" alt="Etoile Flag">
+                    <h2 class="flag__title"><i class="fa-solid fa-address-card"></i>Formulaire</h2>
+                    <p class="flag__description">La toute première épreuve que vous avez surmontée : quitter un formulaire frauduleux pour éviter d'envoyer vos informations personnelles et sensibles à des gens malveillants.</p>
+                    <h3 class="flag__gain"><span>Gain : </span><span class="flag__gain__point">50 points</span></h3>
+                    <div>
+                        <button id="formulaire" class="flag__code button--gris">Code Flag</button>
+                    </div>
+                </article>
+
+                <!--CONNEXION MATHIEU-->
+                <article class="flag" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-once="true">
+                    <img class="flag__star displayNone" src="./src/img/etoile.png" alt="Etoile Flag">
+                    <h2 class="flag__title"><i class="fa-solid fa-key"></i>Admin</h2>
+                    <p class="flag__description">Votre seconde épreuve : vous connecter à la page des Flags, réservée aux seuls élus du système.</p>
+                    <h3 class="flag__gain"><span>Gain : </span><span class="flag__gain__point">jusqu'à 10 points</span></h3>
+                    <div>
+                        <button id="admin" class="flag__code button--gris">Code Flag</button>
+                    </div>
+                </article>
+
+                <!--CODE MORSE YOANN-->
+                <article class="flag" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-once="true">
+                    <img class="flag__star displayNone" src="./src/img/etoile.png" alt="Etoile Flag">
+                    <h2 class="flag__title"><i class="fa-solid fa-user-secret"></i>Spy Game</h2>
+                    <p class="flag__description">Votre Mission si vous l'acceptez : décoder un message radio pour trouver la combinaison du coffre fort renfermant un secret.</p>
+                    <h3 class="flag__gain"><span>Gain : </span><span class="flag__gain__point">jusqu'à 300 points</span></h3>
+                    <div>
+                        <a href="flag/spygame/spygame.html"><button class="button--valider">Lancer</button></a>
+                        <button id="spygame" class="flag__code button--gris">Code Flag</button>
+                    </div>
+                </article>
+
+                <!--SPECTRE AUDIO BASTIEN-->
+                <article class="flag" data-aos="fade-up" data-aos-delay="0" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-once="true">
+                    <img class="flag__star displayNone" src="./src/img/etoile.png" alt="Etoile Flag">
+                    <h2 class="flag__title"><i class="fa-solid fa-satellite-dish"></i>S.P.E.C.T.R.E.</h2>
+                    <p class="flag__description">Un message sonore mystérieux a été capté sur un radiotéléscope. Jusqu'à présent, personne n'en comprend la signification. Saurez-vous en décoder les mystères ?</p>
+                    <h3 class="flag__gain"><span>Gain : </span><span class="flag__gain__point">jusqu'à 200 points</span></h3>
+                    <div>
+                        <a href="flag/spectre/spectre.html"><button class="button--valider">Lancer</button></a>
+                        <button id="spectre" class="flag__code button--gris">Code Flag</button>
+                    </div>
+                </article>
+
+                <!--SWITCH FLORIAN-->
+                <article class="flag" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-once="true">
+                    <img class="flag__star displayNone" src="./src/img/etoile.png" alt="Etoile Flag">
+                    <h2 class="flag__title"><i class="fa-solid fa-server"></i></i>Switch Farceur</h2>
+                    <p class="flag__description">Votre admin est quelqu'un de plutôt joueur et perd un peu la mémoire, il a programmé son switch en y cachant un mot de passe important. Arriverez-vous à le retrouver ?</p>
+                    <h3 class="flag__gain"><span>Gain : </span><span class="flag__gain__point">jusqu'à 200 points</span></h3>
+                    <div>
+                        <a href="flag/switch/switch.html"><button class="button--valider">Lancer</button></a>
+                        <button id="switch" class="flag__code button--gris">Code Flag</button>
+                    </div>
+                </article>
+
+                <!--QR-Code Yann-->
+                <article class="flag" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-once="true">
+                    <img class="flag__star displayNone" src="./src/img/etoile.png" alt="Etoile Flag">
+                    <h2 class="flag__title"><i class="fa-solid fa-qrcode"></i>Perceval Recod-Quest</h2>
+                    <p class="flag__description">"Une fois pour toutes, le nord, suivant comment on est tourné, ça change tout !"</p>
+                    <h3 class="flag__gain"><span>Gain : </span><span class="flag__gain__point">100 points</span></h3>
+                    <div>
+                        <a href="./flag/recodquest/recodquest.html"><button class="button--valider">Lancer</button></a>
+                        <button id="recodquest" class="flag__code button--gris">Code Flag</button>
+                    </div>
+                </article>
+
+                <!--Flag1 Tymothée-->
+                <!--
+                <article class="flag" data-aos="fade-up" data-aos-delay="0" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-once="true">
+                    <img class="flag__star displayNone" src="./src/img/etoile.png" alt="Etoile Flag">
+                    <h2 class="flag__title"><i class="fa-solid fa-user-astronaut"></i>Co0k1e</h2>
+                    <p class="flag__description">Vous venez d'être recruté par le service d'investigation de la NASA pour résoudre les mystères de l'univers, accomplissez votre mission. Retrouvez un agent disparu.. par tous les moyens.</p>
+                    <h3 class="flag__gain"><span>Gain : </span><span class="flag__gain__point">100 points</span></h3>
+                    <div>
+                        <a href="./flag/redrocket/cookie.html"><button class="button--valider">Lancer</button></a>
+                        <button id="Co0k1e" class="flag__code button--gris">Code Flag</button>
+                    </div>
+                </article>
+                -->
+
+                <!--Flag2 Tymothée-->
+                <!--
+                <article class="flag" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-once="true">
+                    <img class="flag__star displayNone" src="./src/img/etoile.png" alt="Etoile Flag">
+                    <h2 class="flag__title"><i class="fa-solid fa-computer"></i></i>CosmoCat</h2>
+                    <p class="flag__description">Vous avez réussi à entrer dans le bureau de l'agent disparu, trouvez des indices et apprenez ce qui c'est passé.
+                        <br><br>Vous devez avoir terminé Co0k1e pour accéder à ce Flag.
+                    </p>
+                    <h3 class="flag__gain"><span>Gain : </span><span class="flag__gain__point">300 points</span></h3>
+                    <div>
+                        <a href="./flag/redrocket/flag02/cosmocat.html" id="CosmoCatLink"><button class="button--gris" id="CosmoCatButton">Lancer</button></a>
+                        <button id="CosmoCat" class="flag__code button--gris">Code Flag</button>
+                    </div>
+                </article>
+                -->
+
+                <!--Flag3 Tymothée-->
+                <!--
+                <article class="flag" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-once="true">
+                    <img class="flag__star displayNone" src="./src/img/etoile.png" alt="Etoile Flag">
+                    <h2 class="flag__title"><i class="fa-solid fa-shuttle-space"></i>ComS@t</h2>
+                    <p class="flag__description">Vous avez trouvé où se trouve l'agent disparu, il enquête sur un relai de communication défectueux.. qui pirate les navettes dans les alentours de la ceinture de "Corona 4". Votre mission, trouvez un moyen de réinitialiser le relai
+                        et rappatriez l'agent sur le terrain.
+                    
+                        <br><br>Vous devez avoir terminé CosmoCat pour accéder à ce Flag.</p>
+                    <h3 class="flag__gain"><span>Gain : </span><span class="flag__gain__point">500 points</span></h3>
+                    <div>
+                        <a href="./flag/redrocket/flag03/comsat.html" id="ComSatLink"><button class="button--gris" id="ComSatButton">Lancer</button></a>
+                        <button id="ComSat" class="flag__code button--gris">Code Flag</button>
+                    </div>
+                </article>
+                -->
+
+                <!--MOT IMAGE-->
+                <article class="flag" data-aos="fade-up" data-aos-delay="0" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-once="true">
+                    <img class="flag__star displayNone" src="./src/img/etoile.png" alt="Etoile Flag">
+                    <h2 class="flag__title"><i class="fa-regular fa-image"></i>Everything but the Exifs !</h2>
+                    <p class="flag__description">Un mot de passe se cache dans cette image. Saurez-vous le trouver ?</p>
+                    <h3 class="flag__gain"><span>Gain : </span><span class="flag__gain__point">jusqu'à 200 points</span></h3>
+                    <div>
+                        <a href="flag/notexifs/notexifs.html"><button class="button--valider">Lancer</button></a>
+                        <button id="exifs" class="flag__code button--gris">Code Flag</button>
+                    </div>
+                </article>
+
+                <!--ANAGRAMME-->
+                <article class="flag" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-once="true">
+                    <img class="flag__star displayNone" src="./src/img/etoile.png" alt="Etoile Flag">
+                    <h2 class="flag__title"><i class="fa-solid fa-font"></i>Anagramme</h2>
+                    <p class="flag__description">L'entrerpise NewTech vous a employé pour tester la sécurité de son coffre-fort numérique. Après avoir mis à l'épreuve vos compétences d'Ingénierie Sociale, vous avez réussi à récolter 5 anagrammes. Vous pensez qu'en les résolvants,
+                        vous pourrez retrouver le mot de passe du coffre-fort numérique.</p>
+                    <h3 class="flag__gain"><span>Gain : </span><span class="flag__gain__point">100 points</span></h3>
+                    <div>
+                        <a href="flag/anagramme/anagramme.html"><button class="button--valider">Lancer</button></a>
+                        <button id="anagramme" class="flag__code button--gris">Code Flag</button>
+                    </div>
+                </article>
+
+                <!--rMQR-->
+                <article class="flag" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-once="true">
+                    <img class="flag__star displayNone" src="./src/img/etoile.png" alt="Etoile Flag">
+                    <h2 class="flag__title"><i class="fa-solid fa-barcode"></i>rMQR or not rMQR ?</h2>
+                    <p class="flag__description">Le stagiaire auquel vous avez demandé de générer un rMQR code avec le mot de passe du serveur vous a fourni ce code qui ne fonctionne pas, arriverez-vous à le décoder ?</p>
+                    <h3 class="flag__gain"><span>Gain : </span><span class="flag__gain__point">jusqu'à 250 points</span></h3>
+                    <div>
+                        <a href="flag/rmqr/rmqr.html"><button class="button--valider">Lancer</button></a>
+                        <button id="rmqr" class="flag__code button--gris">Code Flag</button>
+                    </div>
+                </article>
+
+                <!--CAPTURE MATHIEU PARIS-->
+                <article class="flag" data-aos="fade-up" data-aos-delay="0" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-once="true">
+                    <img class="flag__star displayNone" src="./src/img/etoile.png" alt="Etoile Flag">
+                    <h2 class="flag__title"><i class="fa-solid fa-network-wired"></i>Capture</h2>
+                    <p class="flag__description">Une trame réseau contenant les logins FTP d'un utilisateur a pu être interceptée par un de vos contacts. Arriverez vous à récupérer le mot de passe ?</p>
+                    <h3 class="flag__gain"><span>Gain : </span><span class="flag__gain__point">jusqu'à 150 points</span></h3>
+                    <div>
+                        <a href="flag/capture/capture.html"><button class="button--valider">Lancer</button></a>
+                        <button id="capture" class="flag__code button--gris">Code Flag</button>
+                    </div>
+                </article>
+            </section>
+        </section>
+        <section class="bossFlag">
+            <h1>L'Ultime Epreuve</h1>
+            <article class="flag boss" data-aos="fade-up" data-aos-delay="0" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-once="true">
+                <img class="flag__star displayNone" src="./src/img/etoile.png" alt="Etoile Flag">
+                <i class="fa-solid fa-dragon"></i>
+                <h2 class="flag__title">CAP Pas CAP</h2>
+                <p class="flag__description">Attention aux post-it oubliés !
+                    <br>Connectez vous à la machine 192.168.15.200:5000 en SSH pour récupérer le code du flag dans le fichier texte flag.txt situé dans le dossier /root!</p>
+                <h3 class="flag__gain"><span>Gain : </span><span class="flag__gain__point">500 points</span></h3>
+                <div>
+                    <a href="flag/cap/cap.html"><button class="button--valider">Lancer</button></a>
+                    <button id="cap" class="flag__code button--gris">Code Flag</button>
+                </div>
+            </article>
+            <article class="flag allie" data-aos="fade-up" data-aos-delay="0" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-once="true">
+                <h2 class="flag__title"><i class="fa-solid fa-headset"></i>Carte Allié</h2>
+                <p class="flag__description">En retrouvant le prénom de votre Allié... il ne vous restera plus qu'à l'appeler pour qu'il rejoigne votre équipe et vous solutionne pas à pas l'Ultime Epreuve... Vous perdrez quelques points bien sur, mais vous gagnerez de la pédagogie
+                    et des explications pas à pas...</p>
+                <div class="allie__bastien">
+                    <p>A</p>
+                    <p>N</p>
+                    <p>E</p>
+                    <p>B</p>
+                    <p>T</p>
+                    <p>I</p>
+                    <p>S</p>
+                </div>
+                <h3 class="flag__gain"><span>Gain : </span><span class="flag__gain__point">300 points</span></h3>
+                <div>
+                    <input type="text" class="bastienInput" placeholder="Le Bon Nom"><button class="button--gris bastien">Crier</button>
+                </div>
+            </article>
+        </section>
+    </main>
+    <h2 class="displayCodeFlag reduce displayNone"></h2>
+    <h2 class="displayBastien reduce displayNone"></h2>
+
+    <footer>
+
+    </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

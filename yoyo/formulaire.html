@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire Obligatoire CTF</title>
+    <link rel="stylesheet" href="./src/style/bootstrap.min.css">
+    <link rel="stylesheet" href="./src/style/baseForm.css">
+    <link rel="stylesheet" href="./src/style/formulaire.css">
+    <script src="./src/script/form.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <img src="src/img/logo_ardrar.png" alt="Logo de l'ADRAR Pôle Numérique">
+        <nav>
+            <ul>
+                <li>
+                    <a id="admin-link" href="">
+                        Admin
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div></div>
+    </header>
+
+    <main>
+        <div id="app" class="container mb-3">
+            <h1 class="text-center">Inscription</h1>
+            <!-- FAUX FORMULAIRE D'inscription -->
+            <form id="myForm" style="display: block;">
+                <div class="mb-3">
+                    <label for="prenom" class="form-label">Prénom ou Pseudo</label>
+                    <input id="prenom" type="text" class="form-control" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input id="email" type="email" class="form-control" required>
+                </div>
+                <div class="mb-3">
+                    <label for="dateNaissance" class="form-label">Date de Naissance</label>
+                    <input id="dateNaissance" type="date" class="form-control">
+                </div>
+                <div class="mb-3">
+                    <label for="genre" class="form-label">Genre</label>
+                    <select id="genre" class="form-select">
+                        <option value="">Choisissez...</option>
+                        <option value="homme">Homme</option>
+                        <option value="femme">Femme</option>
+                        <option value="autre">Autre</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="carteBleue" class="form-label">Pseudo Instagram ou SnapChat</label>
+                    <input id="pseudo" type="text" class="form-control">
+                </div>
+                <div class="mb-3">
+                    <label for="codeSecret" class="form-label">(CVC) carte Bleue (pour profiter de réductions...
+                    Lol)</label>
+                    <input id="codeSecret" type="text" class="form-control">
+                </div>
+                <div class="mb-3 form-check">
+                    <input id="conditions" type="checkbox" class="form-check-input" required>
+                    <label class="form-check-label" for="conditions">J'ai pris connaissance des conditions générales de
+                        vente et d'utilisation</label>
+                        <div id="errorMessage" style="color: red; display: none;">Veuillez remplir les champs pseudo et email. <br>(et cocher les conditions Générales)</div>
+                </div>
+                <button id="effacerBtn" type="button" class="button--retour">Effacer</button>
+                <button id="envoyerBtn" class="mx-3 button--valider">Envoyer</button>
+
+            </form>
+
+            <div id="adminSection" style="display: none;">
+                <a href="accueil.html">Lien secret</a>
+            </div>
+
+            <!-- Message de confirmation avec information sur la collecte des données -->
+            <div id="confirmationMessage" style="display: none;" class="mt-3  alert alert-success">
+                Merci de nous avoir donné GRATUITEMENT toutes ces données... 👍 Vos données ont été collectées et envoyées à des serveurs répartis dans le monde pour traitement.
+                <div class="mt-3 col-6 mx-auto">
+                    <strong>Votre pseudo</strong>
+                    <br>
+                    <p id="pseudoInfo">Aucun (Bien Joué mais ...)</p>
+                    <strong>Votre mail</strong>
+                    <br>
+                    <p id="emailInfo">Aucun (on a quand même récolté certaines données ...)</p>
+                </div>
+                <!-- Affichage des informations du userAgent -->
+                <div class="mt-3 col-6 mx-auto">
+                    <strong>User Agent: (Détection Configuration matérielle)</strong>
+                    <br>
+                    <span id="userAgent"></span>
+                </div>
+                <div class="mt-3 col-6 mx-auto">
+                    <strong>Adresse IP:</strong>
+                    <br>
+                    <span id="ipAddress"></span>
+                </div>
+                <div class="mt-3 col-6 mx-auto">
+                    <strong>Type de navigateur:</strong>
+                    <br>
+                    <span id="browserType"></span>
+                </div>
+                <div class="mt-3 col-6 mx-auto">
+                    <strong>Résolution d'écran:</strong>
+                    <br>
+                    <span id="screenResolution"></span>
+                </div>
+                <p>Transfert des données :</p>
+                <div class="progress my-3">
+                    <div id="progressBar" class="progress-bar progress-bar-striped bg-danger progress-bar-animated" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
+                </div>
+                <div class="d-grid gap-2">
+                    <button id="retourBtn" type="button" name="" id="" class="button--valider">
+                        Retour Formulaire
+                    </button>
+                </div>
+            </div>
+            <!-- Message de confirmation avec information sur la collecte des données -->
+            <div id="cancelMessage" style="display: none;" class="mt-3 alert alert-danger">
+                <p class="text-center">Vos données ont été collectées et envoyées à des serveurs répartis dans le monde pour traitement.
+                </p>
+                <div class="mt-3 col-6 mx-auto">
+                    <strong>Votre pseudo</strong>
+                    <br>
+                    <p id="pseudoCancel">Aucun (Bien Joué mais ...)</p>
+                    <strong>Votre mail</strong>
+                    <br>
+                    <p id="emailCancel">Aucun (on a quand même récolté certaines données ...)</p>
+                </div>
+                <!-- Affichage des informations du userAgent -->
+                <div class="mt-3 col-6 mx-auto">
+                    <strong>User Agent: (Détéction Configuration matérielle)</strong>
+                    <br>
+                    <span id="userAgentCancel"></span>
+                </div>
+                <div class="mt-3 col-6 mx-auto">
+                    <strong>Adresse IP:</strong>
+                    <br>
+                    <span id="ipAddressCancel"></span>
+                </div>
+                <div class="mt-3 col-6 mx-auto">
+                    <strong>Type de navigateur:</strong>
+                    <br>
+                    <span id="browserTypeCancel"></span>
+                </div>
+                <div class="mt-3 col-6 mx-auto">
+                    <strong>Résolution d'écran:</strong>
+                    <br>
+                    <span id="screenResolutionCancel"></span>
+                </div>
+                <p>Transfert des données :</p>
+                <div class="progress my-3">
+                    <div id="progressBarCancel" class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
+                </div>
+                <div class="d-grid gap-2">
+                    <button id="retourBtnCancel" type="button" name="" id="" class="button--retour">
+                        Retour Formulaire
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capture</title>
+    <link rel="stylesheet" href="../../src/style/base.css">
+    <link rel="stylesheet" href="./src/style/style.css">
+    <script src="./src/script/redirection.js"></script>
+    <script src="../../src/script/functionAPI.js" defer></script>
+    <script src="./src/script/script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <img src="../../src/img/logo_ardrar.png" alt="Logo de l'ADRAR Pôle Numérique">
+        <nav>
+            <ul>
+                <li><a href="../../accueil.html">Accueil</a></li>
+                <li><a href="../../contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div></div>
+    </header>
+    <main>
+        <h1>Logins FTP</h1>
+
+        <h2>Une trame réseau contenant les logins FTP d'un utilisateur a pu être interceptée par un de vos contacts. Arriverez vous à récupérer le mot de passe ?</h2>
+        <div><a href="./src/ftp/ch1.pcap" target="_blank">ch1.pcap</a></div>
+        <section>
+            <button class="buttonIndice indiceOne button--retour">Indice 1</button>
+            <button class="buttonIndice indiceTwo button--gris">Indice 2</button>
+        </section>
+        <p class="indice"></p>
+        <input type="text" id="answer" />
+
+        <button class="button--valider" onclick="checkAnswer()">Submit</button>
+
+        <p id="result"></p>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>

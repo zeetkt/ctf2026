@@ -1,0 +1,67 @@
+[Tue Mar 03 09:52:42.936196 2026] [ssl:warn] [pid 1:tid 1] AH01906: www.adrar-numerique.lan:443:0 server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)
+[Tue Mar 03 09:52:42.936262 2026] [ssl:warn] [pid 1:tid 1] AH01909: www.adrar-numerique.lan:443:0 server certificate does NOT include an ID which matches the server name
+AH00112: Warning: DocumentRoot [/var/www/html/CtfYoann] does not exist
+AH00112: Warning: DocumentRoot [/var/www/html/CtfYoann] does not exist
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.20.0.10. Set the 'ServerName' directive globally to suppress this message
+[Tue Mar 03 09:52:42.951876 2026] [ssl:warn] [pid 1:tid 1] AH01906: www.adrar-numerique.lan:443:0 server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)
+[Tue Mar 03 09:52:42.951893 2026] [ssl:warn] [pid 1:tid 1] AH01909: www.adrar-numerique.lan:443:0 server certificate does NOT include an ID which matches the server name
+[Tue Mar 03 09:52:42.954452 2026] [mpm_prefork:notice] [pid 1:tid 1] AH00163: Apache/2.4.66 (Debian) PHP/8.2.30 OpenSSL/3.5.4 configured -- resuming normal operations
+[Tue Mar 03 09:52:42.954466 2026] [core:notice] [pid 1:tid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+[Tue Mar 03 09:56:25.102224 2026] [mpm_prefork:notice] [pid 1:tid 1] AH00170: caught SIGWINCH, shutting down gracefully
+[Tue Mar 03 09:56:49.115619 2026] [ssl:warn] [pid 1:tid 1] AH01906: www.adrar-numerique.lan:443:0 server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)
+[Tue Mar 03 09:56:49.115683 2026] [ssl:warn] [pid 1:tid 1] AH01909: www.adrar-numerique.lan:443:0 server certificate does NOT include an ID which matches the server name
+AH00112: Warning: DocumentRoot [/var/www/html/CtfYoann] does not exist
+AH00112: Warning: DocumentRoot [/var/www/html/CtfYoann] does not exist
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.20.0.10. Set the 'ServerName' directive globally to suppress this message
+[Tue Mar 03 09:56:49.129787 2026] [ssl:warn] [pid 1:tid 1] AH01906: www.adrar-numerique.lan:443:0 server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)
+[Tue Mar 03 09:56:49.129804 2026] [ssl:warn] [pid 1:tid 1] AH01909: www.adrar-numerique.lan:443:0 server certificate does NOT include an ID which matches the server name
+[Tue Mar 03 09:56:49.132886 2026] [mpm_prefork:notice] [pid 1:tid 1] AH00163: Apache/2.4.66 (Debian) PHP/8.2.30 OpenSSL/3.5.4 configured -- resuming normal operations
+[Tue Mar 03 09:56:49.132900 2026] [core:notice] [pid 1:tid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+[Tue Mar 03 10:02:44.114279 2026] [mpm_prefork:notice] [pid 1:tid 1] AH00170: caught SIGWINCH, shutting down gracefully
+[Tue Mar 03 10:02:46.008672 2026] [ssl:warn] [pid 1:tid 1] AH01906: www.adrar.lan:443:0 server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)
+[Tue Mar 03 10:02:46.008774 2026] [ssl:warn] [pid 1:tid 1] AH01909: www.adrar.lan:443:0 server certificate does NOT include an ID which matches the server name
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.20.0.10. Set the 'ServerName' directive globally to suppress this message
+[Tue Mar 03 10:02:46.024503 2026] [ssl:warn] [pid 1:tid 1] AH01906: www.adrar.lan:443:0 server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)
+[Tue Mar 03 10:02:46.024525 2026] [ssl:warn] [pid 1:tid 1] AH01909: www.adrar.lan:443:0 server certificate does NOT include an ID which matches the server name
+[Tue Mar 03 10:02:46.029098 2026] [mpm_prefork:notice] [pid 1:tid 1] AH00163: Apache/2.4.66 (Debian) PHP/8.2.30 OpenSSL/3.5.4 configured -- resuming normal operations
+[Tue Mar 03 10:02:46.029122 2026] [core:notice] [pid 1:tid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+[Tue Mar 03 10:11:42.851366 2026] [mpm_prefork:notice] [pid 1:tid 1] AH00170: caught SIGWINCH, shutting down gracefully
+[Tue Mar 03 10:11:44.827927 2026] [ssl:warn] [pid 1:tid 1] AH01906: www.adrar.lan:443:0 server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)
+[Tue Mar 03 10:11:44.828014 2026] [ssl:warn] [pid 1:tid 1] AH01909: www.adrar.lan:443:0 server certificate does NOT include an ID which matches the server name
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.20.0.10. Set the 'ServerName' directive globally to suppress this message
+[Tue Mar 03 10:11:44.845085 2026] [ssl:warn] [pid 1:tid 1] AH01906: www.adrar.lan:443:0 server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)
+[Tue Mar 03 10:11:44.845101 2026] [ssl:warn] [pid 1:tid 1] AH01909: www.adrar.lan:443:0 server certificate does NOT include an ID which matches the server name
+[Tue Mar 03 10:11:44.849913 2026] [mpm_prefork:notice] [pid 1:tid 1] AH00163: Apache/2.4.66 (Debian) PHP/8.2.30 OpenSSL/3.5.4 configured -- resuming normal operations
+[Tue Mar 03 10:11:44.849929 2026] [core:notice] [pid 1:tid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+[Tue Mar 03 10:33:01.972781 2026] [mpm_prefork:notice] [pid 1:tid 1] AH00170: caught SIGWINCH, shutting down gracefully
+[Tue Mar 03 10:33:03.933011 2026] [ssl:warn] [pid 1:tid 1] AH01906: www.adrar.lan:443:0 server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)
+[Tue Mar 03 10:33:03.933086 2026] [ssl:warn] [pid 1:tid 1] AH01909: www.adrar.lan:443:0 server certificate does NOT include an ID which matches the server name
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.20.0.10. Set the 'ServerName' directive globally to suppress this message
+[Tue Mar 03 10:33:03.951392 2026] [ssl:warn] [pid 1:tid 1] AH01906: www.adrar.lan:443:0 server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)
+[Tue Mar 03 10:33:03.951409 2026] [ssl:warn] [pid 1:tid 1] AH01909: www.adrar.lan:443:0 server certificate does NOT include an ID which matches the server name
+[Tue Mar 03 10:33:03.954998 2026] [mpm_prefork:notice] [pid 1:tid 1] AH00163: Apache/2.4.66 (Debian) PHP/8.2.30 OpenSSL/3.5.4 configured -- resuming normal operations
+[Tue Mar 03 10:33:03.955016 2026] [core:notice] [pid 1:tid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+[Tue Mar 03 10:33:17.978832 2026] [mpm_prefork:notice] [pid 1:tid 1] AH00170: caught SIGWINCH, shutting down gracefully
+[Tue Mar 03 10:33:40.615166 2026] [ssl:warn] [pid 1:tid 1] AH01906: www.adrar.lan:443:0 server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)
+[Tue Mar 03 10:33:40.615236 2026] [ssl:warn] [pid 1:tid 1] AH01909: www.adrar.lan:443:0 server certificate does NOT include an ID which matches the server name
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.20.0.10. Set the 'ServerName' directive globally to suppress this message
+[Tue Mar 03 10:33:40.632332 2026] [ssl:warn] [pid 1:tid 1] AH01906: www.adrar.lan:443:0 server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)
+[Tue Mar 03 10:33:40.632353 2026] [ssl:warn] [pid 1:tid 1] AH01909: www.adrar.lan:443:0 server certificate does NOT include an ID which matches the server name
+[Tue Mar 03 10:33:40.635201 2026] [mpm_prefork:notice] [pid 1:tid 1] AH00163: Apache/2.4.66 (Debian) PHP/8.2.30 OpenSSL/3.5.4 configured -- resuming normal operations
+[Tue Mar 03 10:33:40.635220 2026] [core:notice] [pid 1:tid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+[Tue Mar 03 10:43:10.146756 2026] [mpm_prefork:notice] [pid 1:tid 1] AH00170: caught SIGWINCH, shutting down gracefully
+[Tue Mar 03 10:45:31.558036 2026] [ssl:warn] [pid 1:tid 1] AH01906: www.adrar.lan:443:0 server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)
+[Tue Mar 03 10:45:31.558107 2026] [ssl:warn] [pid 1:tid 1] AH01909: www.adrar.lan:443:0 server certificate does NOT include an ID which matches the server name
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.20.0.10. Set the 'ServerName' directive globally to suppress this message
+[Tue Mar 03 10:45:31.573698 2026] [ssl:warn] [pid 1:tid 1] AH01906: www.adrar.lan:443:0 server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)
+[Tue Mar 03 10:45:31.573719 2026] [ssl:warn] [pid 1:tid 1] AH01909: www.adrar.lan:443:0 server certificate does NOT include an ID which matches the server name
+[Tue Mar 03 10:45:31.577031 2026] [mpm_prefork:notice] [pid 1:tid 1] AH00163: Apache/2.4.66 (Debian) PHP/8.2.30 OpenSSL/3.5.4 configured -- resuming normal operations
+[Tue Mar 03 10:45:31.577043 2026] [core:notice] [pid 1:tid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+[Tue Mar 03 10:45:38.337393 2026] [mpm_prefork:notice] [pid 1:tid 1] AH00170: caught SIGWINCH, shutting down gracefully
+[Tue Mar 03 10:45:51.228689 2026] [ssl:warn] [pid 1:tid 1] AH01906: www.adrar.lan:443:0 server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)
+[Tue Mar 03 10:45:51.228752 2026] [ssl:warn] [pid 1:tid 1] AH01909: www.adrar.lan:443:0 server certificate does NOT include an ID which matches the server name
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.20.0.10. Set the 'ServerName' directive globally to suppress this message
+[Tue Mar 03 10:45:51.244202 2026] [ssl:warn] [pid 1:tid 1] AH01906: www.adrar.lan:443:0 server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)
+[Tue Mar 03 10:45:51.244218 2026] [ssl:warn] [pid 1:tid 1] AH01909: www.adrar.lan:443:0 server certificate does NOT include an ID which matches the server name
+[Tue Mar 03 10:45:51.246652 2026] [mpm_prefork:notice] [pid 1:tid 1] AH00163: Apache/2.4.66 (Debian) PHP/8.2.30 OpenSSL/3.5.4 configured -- resuming normal operations
+[Tue Mar 03 10:45:51.246677 2026] [core:notice] [pid 1:tid 1] AH00094: Command line: 'apache2 -D FOREGROUND'

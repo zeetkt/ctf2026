@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CosmoCat</title>
+    <link rel="stylesheet" href="../../../src/style/base.css">
+    <link rel="stylesheet" href="./src/style/style.css">
+    <script src="../../../src/script/functionAPI.js" defer></script>
+    <script src="./src/script/script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <img src="../../../src/img/logo_ardrar.png" alt="Logo de l'ADRAR Pôle Numérique">
+        <nav>
+            <ul>
+                <li><a href="../../../accueil.html">Accueil</a></li>
+                <li><a href="../../../contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div></div>
+    </header>
+    <main>
+        <h2>Vous avez réussi à entrer dans le bureau de l'agent disparu.<br><br>
+            Trouvez des indices.<br>
+            Et apprenez ce qui c'est passé.<br><br>
+            Pourrez-vous résoudre l'enquête ?
+        </h2>
+        <h2>
+            <a href="index.html" id="lancer" class="button--retour" target="_blank" style="margin-right: 50px;">Poursuivre l'enquête</a>
+            <input type="text" id="answer" />
+
+            <button class="button--valider" onclick="checkAnswer()">Submit</button>
+
+            <p id="result"></p>
+        </h2>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>

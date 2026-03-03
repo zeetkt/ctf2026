@@ -1,0 +1,264 @@
+main {
+    padding: 0 18vw;
+    >section {
+        height: 95vh;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+}
+
+div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    height: 600px;
+    width: 600px;
+}
+
+h4 {
+    grid-column: 1;
+    grid-row: 1;
+    align-self: flex-end;
+}
+
+#txtDescription {
+    grid-column: 1 /span 3;
+    grid-row: 2;
+}
+
+#indice1 {
+    grid-column: 1;
+    grid-row: 3;
+}
+
+#indice2 {
+    grid-column: 2;
+    grid-row: 3;
+}
+
+#indice3 {
+    grid-column: 3;
+    grid-row: 3;
+}
+
+#paraIndice {
+    grid-column: 1 /span 3;
+    grid-row: 4;
+}
+
+.question {
+    grid-column: 1 /span 4;
+    grid-row: 5;
+}
+
+.answer {
+    display: flex;
+    grid-column: 1 /span 4;
+    grid-row: 6;
+    height: fit-content;
+    input {
+        padding: 0.5rem;
+        margin-right: var(--size-regular);
+    }
+}
+
+.response {
+    grid-column: 1 /span 4;
+    grid-row: 7;
+}
+
+#indice1,
+#indice2,
+#indice3 {
+    height: 3rem;
+    width: 3rem;
+    background-color: var(--tertiary-color);
+    border: none;
+    border-radius: 0;
+    justify-self: center;
+    align-self: center;
+    animation: linear rotation 4s infinite;
+}
+
+section section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    width: fit-content;
+    height: fit-content;
+    box-shadow: 10px 10px 30px rgb(201, 201, 201);
+    cursor: pointer;
+}
+
+section img {
+    width: 150px;
+    height: 150px;
+    margin: 0;
+}
+
+.A1 {
+    transform: rotate(180deg);
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.B1 {
+    transform: rotate(90deg);
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.C1 {
+    transform: rotate(180deg);
+    grid-column: 3;
+    grid-row: 1;
+}
+
+.D1 {
+    grid-column: 4;
+    grid-row: 1;
+}
+
+.A2 {
+    transform: rotate(270deg);
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.B2 {
+    transform: rotate(180deg);
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.C2 {
+    transform: rotate(270deg);
+    grid-column: 3;
+    grid-row: 2;
+}
+
+.D2 {
+    grid-column: 4;
+    grid-row: 2;
+}
+
+.A3 {
+    transform: rotate(180deg);
+    grid-column: 1;
+    grid-row: 3;
+}
+
+.B3 {
+    transform: rotate(90deg);
+    grid-column: 2;
+    grid-row: 3;
+}
+
+.C3 {
+    grid-column: 3;
+    grid-row: 3;
+}
+
+.D3 {
+    transform: rotate(270deg);
+    grid-column: 4;
+    grid-row: 3;
+}
+
+.A4 {
+    transform: rotate(90deg);
+    grid-column: 1;
+    grid-row: 4;
+}
+
+.B4 {
+    transform: rotate(270deg);
+    grid-column: 2;
+    grid-row: 4;
+}
+
+.C4 {
+    grid-column: 3;
+    grid-row: 4;
+}
+
+.D4 {
+    transform: rotate(90deg);
+    grid-column: 4;
+    grid-row: 4;
+}
+
+.rotate0 {
+    animation: rotate0 0s forwards;
+}
+
+.rotate90 {
+    animation: rotate90 1s forwards;
+}
+
+.rotate180 {
+    animation: rotate180 1s forwards;
+}
+
+.rotate270 {
+    animation: rotate270 1s forwards;
+}
+
+.rotate360 {
+    animation: rotate360 1s forwards;
+}
+
+@keyframes rotate90 {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(90deg);
+    }
+}
+
+@keyframes rotate180 {
+    from {
+        transform: rotate(90deg);
+    }
+    to {
+        transform: rotate(180deg);
+    }
+}
+
+@keyframes rotate270 {
+    from {
+        transform: rotate(180deg);
+    }
+    to {
+        transform: rotate(270deg);
+    }
+}
+
+@keyframes rotate360 {
+    from {
+        transform: rotate(270deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotate0 {
+    from {
+        transform: rotate(360deg);
+    }
+    to {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}

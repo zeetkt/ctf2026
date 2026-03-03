@@ -1,0 +1,205 @@
+@font-face {
+    font-family: 'Sp@ce';
+    src: url('/public/fonts/a-space.light-italic.otf');
+}
+
+body {
+    font-family: 'Sp@ce', sans-serif;
+    color: rgb(231, 211, 150);
+    background-color: rgb(31, 32, 32);
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    
+}
+
+nav {
+    text-align: center;
+    color: rgb(231, 211, 150);
+    text-shadow: 2px 2px 2px black;
+    padding: 30px 0;
+    background-color: rgb(31, 32, 32);
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(231, 211, 150);
+    margin: 0 10px;
+    transition: color 0.2s ease;
+}
+
+nav a:hover {
+    color: rgb(230, 94, 41);
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    text-align: center;
+  }
+
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    background-color: rgb(55, 59, 59);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.15);
+    height: 100px;
+}
+
+.blocoffer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 0;
+    background-color: rgb(55, 59, 59, 0.7);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.15);
+    width: 700px;
+    position: absolute;
+    right: 0;
+    animation: 1s ease-out 0s 1 slideInFromRight;
+}
+
+.navbar-nav {
+    list-style: none;
+    display: flex;
+}
+
+#o1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 0;
+    background-color: rgb(55, 59, 59, 0.7);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.15);
+    width: 800px;
+    position: absolute;
+    left: 0;
+    animation: 1s ease-out 0s 1 slideInFromBottom;
+    bottom: 20px;
+}
+#i1 {
+    height: 570px;
+    background-image: url('/public/images/offer1.png');
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#o2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 0;
+    background-color: rgb(55, 59, 59, 0.7);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.15);
+    width: 800px;
+    position: absolute;
+    left: 0;
+    bottom: 20px;
+}
+#i2 {
+    height: 570px;
+    background-image: url('/public/images/offer2.png');
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#o3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 0;
+    background-color: rgb(55, 59, 59, 0.7);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.15);
+    width: 800px;
+    position: absolute;
+    left: 0;
+    bottom: 20px;
+}
+#i3 {
+    height: 570px;
+    background-image: url('/public/images/offer3.png');
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#o4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 0;
+    background-color: rgb(55, 59, 59, 0.7);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.15);
+    width: 800px;
+    position: absolute;
+    left: 0;
+    bottom: 20px;
+}
+#i4 {
+    height: 570px;
+    background-image: url('/public/images/offer-evasion.png');
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.logo {
+    margin-left: 120px;
+    width: 190px;
+    height: 190px;
+}
+  
+.title1 {
+    margin-right: 100px;
+    font-size: 1.5em;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+}
+
+.title2 {
+    margin-right: auto;
+    margin-left: 60px;
+    font-size: 2em;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+    animation: 1s ease-out 0s 1 slideInFromRight;
+}
+
+@keyframes scroll {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+}
+  
+.scrolling-content {
+    display: inline-block;
+    text-shadow: 2px 2px 2px black;
+    color: rgb(230, 94, 41);
+    white-space: nowrap;
+    animation: scroll 10s linear infinite;
+}
+
+@keyframes slideInFromRight {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+}
+
+@keyframes slideInFromBottom {
+    0% {
+      transform: translatey(100%);
+    }
+    100% {
+      transform: translatey(0);
+    }
+}

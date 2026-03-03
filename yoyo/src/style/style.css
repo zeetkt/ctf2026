@@ -1,0 +1,186 @@
+main {
+    padding: 0 10vw;
+    display: flex;
+    gap: 5vw;
+}
+
+.listFLag {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .75vw;
+}
+
+article {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--dark-color);
+    border-radius: var(--size-h1);
+    box-shadow: 0.3rem 0.3rem 1rem var(--dark-color);
+    padding: var(--size-regular);
+    width: 18vw;
+    min-width: 250px;
+    h2 {
+        min-height: calc(2.5*var(--size-h2));
+    }
+    h2,
+    i,
+    span {
+        color: var(--tertiary-color);
+    }
+    i {
+        font-size: var(--size-h1);
+        margin-right: var(--size-regular);
+    }
+    h3 span {
+        font-size: var(--size-h3);
+    }
+    h3 span:first-child {
+        font-weight: 700;
+    }
+    p {
+        color: var(--light-color);
+    }
+    .flag__description {
+        min-height: 200px;
+    }
+    .flag__gain {
+        display: flex;
+        justify-content: space-between;
+    }
+    div {
+        display: flex;
+        justify-content: space-around;
+    }
+    a {
+        align-self: center;
+    }
+    img {
+        position: relative;
+        right: -80%;
+        top: -5%;
+        transform: rotate(20deg);
+        height: 80px;
+        width: 80px;
+        margin-bottom: -80px;
+    }
+}
+
+.boss {
+    border: 1vw solid var(--secondary-color);
+    background-color: var(--dark-color);
+    display: flex;
+    flex-direction: column;
+    i {
+        height: 5vw;
+        width: 5vw;
+        background-color: var(--dark-color);
+        border: 0.75rem solid var(--secondary-color);
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: var(--secondary-color);
+    }
+    h2,
+    i {
+        align-self: center;
+        margin-bottom: 0;
+    }
+    h2,
+    span {
+        color: var(--secondary-color);
+    }
+    p {
+        color: var(--light-color);
+    }
+}
+
+.allie {
+    background-color: var(--tertiary-color);
+    h2,
+    i {
+        align-self: center;
+        margin-bottom: 0;
+    }
+    h2,
+    i,
+    span {
+        color: var(--dark-color);
+    }
+    p {
+        color: var(--dark-color);
+        min-height: 0;
+    }
+    .allie__bastien p {
+        background-color: var(--dark-color);
+        color: var(--tertiary-color);
+        font-weight: 600;
+        font-size: var(--size-h2);
+        width: var(--size-h2);
+        text-align: center;
+        padding: 0.25rem;
+        border-radius: 0.5rem;
+    }
+    input {
+        border: none;
+        border-radius: var(--size-regular);
+        padding: 0.5rem;
+        width: 7vw;
+    }
+}
+
+.displayCodeFlag,
+.displayBastien {
+    align-items: center;
+    background-color: var(--primary-color);
+    opacity: 0.95;
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    width: 60vw;
+    padding: 0 20vw;
+}
+
+.displayBastien {
+    background-color: var(--tertiary-color);
+}
+
+.zoom {
+    animation: zoom 1s;
+}
+
+.reduce {
+    animation: reduce 1s;
+}
+
+.displayFlex {
+    display: flex;
+    justify-content: center;
+}
+
+.displayNone {
+    display: none;
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(0);
+        transform-origin: center;
+    }
+    to {
+        transform: scale(1);
+        transform-origin: center;
+    }
+}
+
+@keyframes reduce {
+    from {
+        transform: scale(1);
+        transform-origin: center;
+    }
+    to {
+        transform: scale(0);
+        transform-origin: center;
+    }
+}

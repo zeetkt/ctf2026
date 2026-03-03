@@ -1,0 +1,12 @@
+main {
+    padding: 0 20vw;
+    min-height: 65vh;
+}
+
+section {
+    display: flex;
+    img {
+        margin-right: var(--size-h1);
+        width: 20vw;
+    }
+}

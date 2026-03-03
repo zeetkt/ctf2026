@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rMQR or not rMQR ?</title>
+    <link rel="stylesheet" href="../../src/style/base.css">
+    <link rel="stylesheet" href="./src/style/style.css">
+    <script src="./src/script/redirection.js"></script>
+    <script src="../../src/script/functionAPI.js" defer></script>
+    <script src="./src/script/script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <img src="../../src/img/logo_ardrar.png" alt="Logo de l'ADRAR Pôle Numérique">
+        <nav>
+            <ul>
+                <li><a href="../../accueil.html">Accueil</a></li>
+                <li><a href="../../contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div></div>
+    </header>
+    <main>
+        <h1>rMQR or not rMQR ?</h1>
+
+        <h2>Le stagiaire auquel vous avez demandé de générer un rMQR code avec le mot de passe du serveur vous a fourni ce code qui ne fonctionne pas, arriverez-vous à le décoder ?</h2>
+        <img src="./src/img/rMQR.png">
+        <section>
+            <button class="buttonIndice indiceOne button--retour">Indice 1</button>
+            <button class="buttonIndice indiceTwo button--gris">Indice 2</button>
+            <button class="buttonIndice indiceThree button--gris">Indice 3</button>
+            <button class="buttonIndice indiceFour button--gris">Indice 4</button>
+        </section>
+        <p class="indice"></p>
+        <input type="text" id="answer" />
+
+        <button class="button--valider" onclick="checkAnswer()">Submit</button>
+
+        <p id="result"></p>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,12 @@
+header {
+    height: auto;
+    justify-content: space-between;
+}
+
+a {
+    text-decoration: none;
+}
+
+label {
+    font-weight: 700;
+}
