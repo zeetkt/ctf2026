@@ -103,5 +103,5 @@ echo "Configuration terminée !"
 echo "1. Relancez le conteneur DNS : docker restart srvdns"
 echo "2. Testez : nslookup www.adrar.lan 127.0.0.1"
 echo "============================================="
-sudo docker compose up -d
-docker compose up -d
+sudo docker compose up -d --build
+docker compose up -d --build
