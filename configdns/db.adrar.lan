@@ -8,12 +8,12 @@ $TTL    604800
                          604800 )       ; Negative Cache TTL
 ;
 @       IN      NS      srvdns.adrar.lan.
-@       IN      A       192.168.15.40
-srvdns  IN      A       192.168.15.40
+@       IN      A       192.168.15.28
+srvdns  IN      A       192.168.15.28
 
 ; Les Challenges
-www     IN      A       192.168.15.40
-mm      IN      A       192.168.15.40
-tym     IN      A       192.168.15.40
-jeff    IN      A       192.168.15.40
-flo     IN      A       192.168.15.40
+www     IN      A       192.168.15.28
+mm      IN      A       192.168.15.28
+tym     IN      A       192.168.15.28
+jeff    IN      A       192.168.15.28
+flo     IN      A       192.168.15.28
