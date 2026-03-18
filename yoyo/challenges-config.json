@@ -4,12 +4,12 @@
     "admin": true,
     "spygame": true,
     "spectre": true,
-    "switch": true,
+    "switch": false,
     "recodquest": true,
     "exifs": true,
     "anagramme": true,
     "rmqr": true,
     "capture": true,
-    "ultime": true
+    "ultime": false
   }
 }
