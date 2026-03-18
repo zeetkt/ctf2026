@@ -1,0 +1,15 @@
+{
+  "challenges": {
+    "formulaire": true,
+    "admin": true,
+    "spygame": true,
+    "spectre": true,
+    "switch": true,
+    "recodquest": true,
+    "exifs": true,
+    "anagramme": true,
+    "rmqr": true,
+    "capture": true,
+    "ultime": true
+  }
+}
