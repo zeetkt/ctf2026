@@ -18,7 +18,7 @@ services:
     ports:
       - "80:80"
       - "443:443"
-      - "4242:4242" # Le port du challenge de Flo
+      # - "4242:4242" # Le port du challenge de Flo
     volumes:
       # On garde les logs accessibles depuis l'extérieur pour debugger
       - ./logs_apache:/var/log/apache2

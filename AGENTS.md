@@ -10,8 +10,19 @@ ctf2026/
 ├── CtfAdrar/                # Main CTF web challenges
 │   ├── flag01/              # Challenge 1 (terminal-style)
 │   ├── flag02/astrobooking/ # Vue.js challenge
-│   ├── flag03/              # Challenge 3
 │   └── intro/               # Introduction page
+├── yoyo/                    # CTF interface
+│   ├── flag/                # All challenges
+│   │   ├── spygame/         # Morse code challenge
+│   │   ├── spectre/         # Audio spectrogram challenge
+│   │   ├── switch/          # Switch challenge (disabled)
+│   │   ├── recodquest/      # QR code challenge
+│   │   ├── notexifs/        # Image EXIF challenge
+│   │   ├── anagramme/       # Anagram challenge
+│   │   ├── rmqr/            # rMQR challenge
+│   │   ├── capture/         # Network capture (pcap)
+│   │   └── cap/             # SSH capture challenge
+│   └── src/                 # Shared resources
 ├── configdns/               # BIND9 DNS configuration
 ├── cachedns/                # DNS cache
 ├── recordsdns/              # DNS records

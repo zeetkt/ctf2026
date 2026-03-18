@@ -26,7 +26,7 @@ RUN docker-php-ext-install mysqli pdo pdo_mysql gd intl zip
 RUN a2enmod ssl rewrite
 
 # Ajout du port 4242 à la configuration Apache (pour le challenge de Flo)
-RUN echo "Listen 4242" >> /etc/apache2/ports.conf
+# RUN echo "Listen 4242" >> /etc/apache2/ports.conf
 
 # 4. Génération du certificat SSL auto-signé
 RUN mkdir -p /etc/apache2/certificate
@@ -38,19 +38,13 @@ RUN openssl req -new -newkey rsa:4096 -x509 -sha256 -days 365 -nodes \
 # 5. Copie des fichiers de configuration VirtualHost
 # Assure-toi que ces fichiers sont bien dans le même dossier que le Dockerfile
 COPY vhostyoann.conf /etc/apache2/sites-available/
-COPY vhostflo.conf /etc/apache2/sites-available/
-COPY vhostmm.conf /etc/apache2/sites-available/
-COPY vhostjeff.conf /etc/apache2/sites-available/
 COPY vhosttym.conf /etc/apache2/sites-available/
+# COPY vhostflo.conf /etc/apache2/sites-available/
 
 # 6. Activation des sites
-# (J'active ceux présents dans ton ancien Dockerfile, décommente les autres si besoin)
 RUN a2dissite 000-default.conf \
-    && a2ensite vhostyoann.conf \
-    && a2ensite vhostflo.conf
-    # && a2ensite vhostmm.conf \
-    # && a2ensite vhostjeff.conf \
-    # && a2ensite vhosttym.conf
+    && a2ensite vhostyoann.conf
+    # && a2ensite vhostflo.conf
 
 # 7. Copie des sources du CTF
 # Note : C'est mieux de faire ça ici, mais le docker-compose pourra écraser ça avec des volumes.
@@ -59,12 +53,12 @@ WORKDIR /var/www/html
 COPY CtfAdrar/ /var/www/html/CtfAdrar/
 # --- AJOUT ICI ---
 COPY yoyo/ /var/www/html/yoyo/
-# -----------------
-# Création des dossiers vides pour éviter les erreurs si les dossiers sources manquent
-RUN mkdir -p /var/www/html/mm /var/www/html/flo /var/www/html/jeff
 
 # Copie spécifique pour le challenge de Flo
-COPY flagswitch.html /var/www/html/flo/index.html
+# COPY flagswitch.html /var/www/html/flo/index.html
+
+# Création des dossiers vides pour éviter les erreurs si les dossiers sources manquent
+# RUN mkdir -p /var/www/html/flo
 
 # 8. Permissions (CRITIQUE : Sécurité et fonctionnement)
 # On donne la propriété à www-data (Apache) au lieu de faire chmod 777 partout

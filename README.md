@@ -24,7 +24,6 @@ ctf2026/
 │   ├── flag01/              # Challenge 1 - Codage binaire
 │   ├── flag02/              # Challenge 2
 │   │   └── astrobooking/    # Application Vue.js
-│   ├── flag03/              # Challenge 3
 │   └── style.css            # Styles globaux
 │
 ├── yoyo/                    # Interface CTF complète
@@ -53,7 +52,7 @@ ctf2026/
 
 | Service | Description | Port |
 |---------|-------------|------|
-| `apachephp` | Serveur web Apache/PHP | 80, 443, 4242 |
+| `apachephp` | Serveur web Apache/PHP | 80, 443 |
 | `bind9` | Serveur DNS | 53 |
 | `challenge_tar` | Challenge SSH | 5000 |
 
@@ -68,13 +67,12 @@ Le fichier `yoyo/challenges-config.json` permet d'activer/désactiver les challe
     "admin": true,
     "spygame": true,
     "spectre": true,
-    "switch": true,
+    "switch": false,
     "recodquest": true,
     "exifs": true,
     "anagramme": true,
     "rmqr": true,
-    "capture": true,
-    "ultime": true
+    "capture": true
   }
 }
 ```
